@@ -5,6 +5,10 @@
   --gray10: #616161;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 
 body {
   color: var(--gray30);
@@ -14,11 +18,22 @@ body {
 
 header{
   font-size: 14px;
+  width: 188px;
   color: var(--gray10);
+  position: absolute;
+  left: -232px;
+  top: 64px;
 }
+
+
 
 nav details summary{
   font-weight: bold;
+  line-height: 24px;
+}
+
+header li{
+  margin-bottom: 16px;
 }
 
 header a{
@@ -38,11 +53,10 @@ h1{
   font-size: 60px;
   margin-top: 64px;
   margin-bottom: 16px;
+  font-weight: normal;
 }
 
-h1 + p{
-  margin-bottom: 64px;
-}
+
 
 hr{
   margin: 64px 0;
@@ -60,20 +74,67 @@ h3{
   margin-top: 16px;
   margin-bottom: 24px;
   font-weight: normal;
+  /* width: 200px;
+  border: 1px solid red;
+  padding: 20px;
+  box-sizing: border-box; */
 }
 
 pre{
   background: #FEC62E;
+  padding: 40px;
+  font-family: 'Roboto';
+  line-height: 24px;
 }
 
 blockquote{
+  font-size: 24px;
   margin: 32px 0;
+  padding-left: 20px;
+  border-left: 4px solid var(--gray30);
+  line-height: 24px;
 }
+
+blockquote span{
+  color: var(--gray10);
+}
+
+blockquote span::before{
+  content: '-  ';
+}
+
+.header{
+  position: sticky;
+  top: 0;
+}
+
+
+
+.header-content{
+  position: relative;
+}
+
+.main{
+  background-color: white;
+  
+}
+
+.wrapper{
+  width: 902px;
+  margin: auto;
+}
+
+.main-content{
+  background-color: white;
+}
+
 
 .hero{
   height: 350px;
   background-image: linear-gradient(to top, rgba(255, 255, 255, 0.3) 0, transparent), url('../images/bg-hero.png');
 }
+
+
 
 .section-content{
   margin-top: 164px;
@@ -104,8 +165,10 @@ blockquote{
   counter-reset: titleList;
 }
 
- h3{
+.section-content h3{
   counter-increment: titleList;
+  padding-bottom: 8px;
+  position: relative;
 }
 
 
@@ -117,9 +180,11 @@ h3::before{
 
 .section-content h3::after{
   content:'';
-  width: 32px;
+  width: 80px;
   height: 4px;
-  background-color: red;
-  display: block;
   background-color: var(--gray30);
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  bottom: 0; 
 }
