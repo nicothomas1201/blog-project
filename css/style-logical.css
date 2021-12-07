@@ -17,22 +17,23 @@ body {
   margin: 0;
 }
 
-.header{
+/* .header{
   position: sticky;
   inset-block-start: -45px;
-}
+} */
 
 .header-content{
-  position: relative;
-  inset-block-start: 65px;
+  padding-inline: 20px;
+
 }
 
 header{
   font-size: 14px;
   color: var(--white);
-  position: absolute;
-  inset-inline-start: -208px; 
-  inline-size: 188px; 
+  margin-block-start: 20px;
+  /* position: absolute; */
+  /* inset-inline-start: -208px;  */
+  /* inline-size: 188px;  */
 }
 
 nav details summary{
@@ -58,8 +59,8 @@ summary {
 }
 
 h1{
-  font-size: 60px;
-  margin-block-start: 64px;
+  font-size: 40px;
+  margin-block-start: 20px;
   margin-block-end: 16px;
 }
 
@@ -88,7 +89,6 @@ pre{
   border: 10px solid #5541ff;
   box-shadow: -10px 10px 0 0 #abaaf6;
   margin-block-end: 30px;
-  border-end-end-radius: 60px;
 }
 
 p{
@@ -98,7 +98,7 @@ p{
 
 
 .hero{
-  height: 350px;
+  height: 96px;
   background: linear-gradient(96.07deg, #314755 30.63%, #26A0DA 102.18%);
 }
 
@@ -106,6 +106,7 @@ p{
   margin-block-start: 40px;
   display: block;
   max-inline-size: 100%;
+  /* max-inline-size: 100%; */
 }
 
 .section-content{
@@ -190,7 +191,67 @@ p a{
   display: inline-block;
   inline-size: 15px;
   block-size: 15px;
-  background-color: #000;
+  background-color: #fff;
   border-radius: 50%;
 }
 
+.form input{
+  inline-size: 100%;
+  box-sizing: border-box;
+  border-radius: 8px;
+  background-color: transparent;
+  border: 1px solid var(--white30);
+  block-size: 48px;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--white30);
+  padding-inline-start: 16px;
+  padding-block: 12px;
+  display: block;
+  margin-block-end: 24px;
+}
+
+.form input[type="submit"]{
+  background-color: #157EFB;
+  border: none;
+}
+
+.form input::placeholder{
+  color: var(--white20);
+}
+
+
+@media screen and (min-width: 1366px){
+
+  h1{
+    font-size: 60px;
+    margin-block-start: 64px;
+  }
+
+  .hero{
+    block-size: 350px;
+  }
+
+  .header{
+    position: sticky;
+    inset-block-start: -45px;
+  }
+
+  .header-content{
+    position: relative;
+    inset-block-start: 65px;
+    padding-inline: 0;
+  }
+
+  header{
+    font-size: 14px;
+    color: var(--white);
+    position: absolute;
+    inset-inline-start: -208px; 
+    inline-size: 188px; 
+  }
+
+  pre{
+    border-end-end-radius: 60px;
+  }
+}
