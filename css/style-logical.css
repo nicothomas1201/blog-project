@@ -1,20 +1,21 @@
 :root{
   font-size: 16px;
-  --gray30: #212121;
-  --gray20: #212429;
-  --gray10: #616161;
+  --white30: #ffffff;
+  --white20: #A5A3A5;
+  --white10: #3A3539;
 }
 
 
 body {
-  color: var(--gray30);
-  font-family: 'Roboto', sans-serif;
-
+  color: var(--white30);
+  font-family: 'Nunito', sans-serif;
+  background-color: #251F24;
+  margin: 0;
 }
 
 header{
   font-size: 14px;
-  color: var(--gray10);
+  color: var(--white);
 }
 
 nav details summary{
@@ -22,33 +23,62 @@ nav details summary{
 }
 
 header a{
-  color: var(--gray10);
+  color: var(--white20);
   text-decoration: none;
 }
 
+header li{
+  color: var(--white20);
+}
+
 header li:hover, a:hover{
-  color: var(--gray30);
+  color: var(--white30);
 }
 
 summary {
   cursor: pointer;
 }
 
+h1{
+  font-size: 60px;
+  margin-block-start: 64px;
+  margin-block-end: 16px;
+}
+
 h2{
   font-size: 32px;
+  margin-block: 40px;
 }
 
 h3{
   font-size: 24px;
+  font-weight: 600;
+  margin-block: 16px;
+}
+
+hr{
+  margin-block: 40px;
+  border-color: #61616133;
 }
 
 pre{
-  background: #FEC62E;
+  background: var(--white10);
 }
+
+p{
+  color: var(--white20);
+}
+
+
 
 .hero{
   height: 350px;
-  background-image: linear-gradient(to top, rgba(255, 255, 255, 0.3) 0, transparent), url('../images/bg-hero.png');
+  background: linear-gradient(96.07deg, #314755 30.63%, #26A0DA 102.18%);
+}
+
+.section-content img{
+  margin-block-start: 40px;
+  display: block;
 }
 
 .section-content{
@@ -71,6 +101,27 @@ pre{
   width: 32px;
   height: 4px;
   background-color: red;
-  display: block;
-  background-color: var(--gray30);
+  display: inline-block;
+  background-color: var(--white30);
+  
+}
+
+blockquote{
+  margin-block-start: 80px;
+  margin-block-end: 63px;
+  background-color: var(--white10);
+  border-radius: 8px;
+  width: 636px;
+  height: 128px;  
+  font-size: 24px;
+  line-height: 32px;
+  
+}
+
+blockquote span::before{
+  content: '- ';  
+}
+
+.main hr{
+  display: none;
 }
