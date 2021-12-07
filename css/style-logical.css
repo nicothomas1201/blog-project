@@ -1,8 +1,9 @@
 :root{
   font-size: 16px;
   --white30: #ffffff;
-  --white20: #A5A3A5;
-  --white10: #3A3539;
+  --white20: #B8C1EC;
+  --white10: #D4939D;
+  --backgroundColor: #232946;
 }
 
 html{
@@ -13,7 +14,7 @@ html{
 body {
   color: var(--white30);
   font-family: 'Nunito', sans-serif;
-  background-color: #251F24;
+  background-color: var(--backgroundColor);
   margin: 0;
 }
 
@@ -81,13 +82,11 @@ hr{
 }
 
 pre{
-  background: var(--white10);
+  /* background: var(--white10); */
   padding-inline: 40px;
   padding-block: 40px;
   overflow: auto;
   border-radius: 8px;
-  border: 10px solid #5541ff;
-  box-shadow: -10px 10px 0 0 #abaaf6;
   margin-block-end: 30px;
 }
 
@@ -117,11 +116,12 @@ p{
   counter-increment: titleList;
 }
 
-
-
 .section-content h3::before{
   content: counter(titleList, decimal) ". ";
-  
+}
+
+.section-content ol,ul li{
+  color: var(--white20);
 }
 
 blockquote{
@@ -212,7 +212,9 @@ p a{
 }
 
 .form input[type="submit"]{
-  background-color: #157EFB;
+  background-color: #EEBBC3;
+  color: #232946;
+  font-weight: 700;
   border: none;
 }
 
