@@ -34,13 +34,11 @@
 
 </head>
 <body>
-  <!-- <div class="hero"></div> -->
-  
   
   <div class="header">
     <div class="wrapper">
-      <div class="header-content debug">
-        <header>
+      <div class="header-content">
+        <header aria-label="Navegacion Principal">
           <nav>
             <details >
               <summary>Set Up</summary>
@@ -101,12 +99,12 @@
           en 3 sobre layouts.
         </p>
         <hr>
-        <section class="section-content">
-          <h2>
+        <section class="section-content" role="contentinfo" aria-labelledby="Setup">
+          <h2 id="Setup">
             Setup
           </h2>
         
-          <img id="google-chrome" src="./images/Google-Chrome-white.png" alt="Logo de Google Google Chrome" title="Logo de Google Google Chrome">
+          <img id="google-chrome" src="./images/Google-Chrome-white.png" aria-hidden="true" alt="Logo de Google Google Chrome" title="Logo de Google Google Chrome">
           
           <h3>Google Chrome</h3>
           <p>
@@ -114,7 +112,7 @@
             estándares y herramientas de desarrollo avanzadas y de amigable uso.
           </p>
           
-          <img id="vs-code" src="./images/Visual-Code-white.png" alt="Logo de Visual Studio Code" title="Logo de Visual Studio Code">
+          <img id="vs-code" src="./images/Visual-Code-white.png" aria-hidden="true" alt="Logo de Visual Studio Code" title="Logo de Visual Studio Code">
           
           <h3>Visual Studio Code</h3>
           <p>
@@ -123,7 +121,7 @@
             programador sin importar el lenguaje en el que se desemvuelva.
           </p>
         
-          <img id="figma" src="./images/Figma-white.png" alt="Logo de Figma" title="Logo de figma">
+          <img id="figma" src="./images/Figma-white.png" aria-hidden="true" alt="Logo de Figma" title="Logo de figma">
           
           <h3>Figma</h3>
           <p>
@@ -131,7 +129,7 @@
             para su implementación por su fácil uso porque puede ser usado directamente desde el navegador.
           </p>
         
-          <img id="github" src="./images/GitHub-white.png" alt="Logo de GitHub" title="Logo de GitHub">
+          <img id="github" src="./images/GitHub-white.png" aria-hidden="true" alt="Logo de GitHub" title="Logo de GitHub">
           
           <h3>GitHub</h3>
           <p>
@@ -154,9 +152,9 @@
       
         <hr class="delete">
     
-        <section class="section-content">
+        <section role="contentinfo" class="section-content" aria-labelledby="conceptos">
     
-          <h2>Conceptos esenciales del Desarrollo Web</h2>
+          <h2 id="conceptos">Conceptos esenciales del Desarrollo Web</h2>
           <h3 id="que-html">Qué es HTML</h3>
           <p>
             Hyper Text Markup Language o Lenguaje de marcas Hipertexto. Es el componente más básico de la web. Define el significado 
@@ -217,9 +215,9 @@
           <img src="./images/image-5.png" alt="">
         </section>
     
-        <section class="section-content">
+        <section role="contentinfo" class="section-content" aria-labelledby="modelo">
     
-          <h2>Modelo de caja</h2>
+          <h2 id="modelo">Modelo de caja</h2>
           <h3>El modelo de caja está compuesto por:</h3>
           
           <p>Chrome va a ser el navegador que utilizaremos en el curso por su extenso soporte de nuevos estándares y herramientas de desarrollo avanzadas y de amigable uso.</p>
@@ -247,8 +245,8 @@
           </ul>
         </section>
 
-        <div class="section-content">
-          <h2>Hola estos son algunos videos muy lindos</h2>
+        <div class="section-content"  aria-labelledby="hola">
+          <h2 id="hola">Hola estos son algunos videos muy lindos</h2>
           <div class="slider">
             <scroll-container class="slider-container">
               <scroll-page class="slider-slide">
@@ -268,9 +266,9 @@
               </scroll-page>
             </scroll-container>
             <div class="slider-bullet-list">
-              <a href="#video-1" class="slider-bullet"></a>
-              <a href="#video-2" class="slider-bullet"></a>
-              <a href="#video-3" class="slider-bullet"></a>
+              <a href="#video-1" class="slider-bullet" aria-label="imagen 1"></a>
+              <a href="#video-2" class="slider-bullet" aria-label="imagen 2"></a>
+              <a href="#video-3" class="slider-bullet" aria-label="imagen 3"></a>
             </div>
           </div>
         </div>
@@ -279,8 +277,8 @@
         </p>
 
         <div class="section-content">
-          <form action="#" class="form">
-            <h2>Ingresa a nuestro newsletter</h2>
+          <form  class="form" aria-labelledby="newsletter">
+            <h2 id="newsletter">Ingresa a nuestro newsletter</h2>
             <input type="text" required placeholder="Nombre">
             <input type="email" required placeholder="Correo electrónico">
             <input type="submit" value="Suscribirme">
